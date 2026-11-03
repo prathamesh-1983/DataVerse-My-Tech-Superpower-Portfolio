@@ -1,0 +1,40 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 rgba(0,217,255,0.06); }
+  50% { box-shadow: 0 0 20px rgba(0,217,255,0.1); }
+}
+
+.skill-card,
+.project-card,
+.achievement-card,
+.glass-card,
+.chart-panel,
+.contact-art,
+.about-visual {
+  animation: pulseGlow 4.6s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.1%, 100% { opacity: 0; }
+}
+
+.terminal-output .cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.1em;
+  background: var(--electric-cyan);
+  vertical-align: middle;
+  animation: blink 1s steps(1) infinite;
+  margin-left: 4px;
+}
