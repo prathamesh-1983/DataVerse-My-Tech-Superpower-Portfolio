@@ -1,0 +1,16 @@
+{
+  "name": "dataverse-portfolio",
+  "version": "1.0.0",
+  "description": "This project is a static portfolio website for Prathamesh Desai, designed as a futuristic data analytics command center inspired by a premium dashboard-style aesthetic. The site is built with HTML, CSS, and vanilla JavaScript, and is intended for AWS Amplify Hosting without a backend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "jsdom": "^30.1.3"
+  }
+}
