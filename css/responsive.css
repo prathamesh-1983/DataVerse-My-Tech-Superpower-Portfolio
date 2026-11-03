@@ -1,0 +1,128 @@
+@media (max-width: 1180px) {
+  .page-shell {
+    width: min(100% - 24px, 1400px);
+    gap: 18px;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .achievements-grid,
+  .skills-expanded,
+  .projects-expanded,
+  .achievements-expanded {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-shell {
+    display: block;
+    width: min(100% - 20px, 1200px);
+    padding-top: 12px;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 12px;
+    top: 12px;
+    bottom: 12px;
+    width: min(80vw, 310px);
+    transform: translateX(calc(-100% - 18px));
+    transition: transform 0.28s ease;
+    z-index: 200;
+  }
+
+  .sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .main-panel {
+    padding-top: 52px;
+  }
+
+  .mobile-menu-toggle {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 210;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    border: 1px solid rgba(0,217,255,0.35);
+    background: rgba(6, 16, 32, 0.88);
+    display: grid;
+    place-items: center;
+    gap: 4px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+  }
+
+  .mobile-menu-toggle span {
+    width: 22px;
+    height: 2px;
+    display: block;
+    border-radius: 3px;
+    background: white;
+  }
+
+  .about-grid,
+  .journey-grid,
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero,
+  .panel-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .achievements-grid,
+  .skills-expanded,
+  .projects-expanded,
+  .achievements-expanded {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-bars {
+    gap: 14px;
+  }
+
+  .terminal-window {
+    width: min(96vw, 700px);
+    height: min(68vh, 540px);
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+
+  .contact-link {
+    width: 100%;
+    justify-content: center;
+  }
+}
