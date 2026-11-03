@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DataVerse – My Tech Superpower Portfolio. A futuristic data analytics portfolio for Prathamesh Desai, an aspiring Data Analyst."
+    />
+    <meta property="og:title" content="DataVerse – My Tech Superpower Portfolio" />
+    <meta property="og:description" content="Turning Data into Insights, and Ideas into Impact." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/icons/favicon.svg" />
+    <title>DataVerse | My Tech Superpower Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar" aria-label="Sidebar navigation">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img" aria-label="DataVerse logo">
+              <rect x="8" y="36" width="10" height="18" rx="3" />
+              <rect x="24" y="22" width="10" height="32" rx="3" />
+              <rect x="40" y="12" width="10" height="42" rx="3" />
+              <path d="M16 30 L24 26 L32 27 L40 18 L48 10" />
+            </svg>
+          </div>
+          <div class="brand-copy">
+            <h1>DataVerse</h1>
+            <p>My Tech Superpower Portfolio</p>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" id="sidebarNav" aria-label="Main sections"></nav>
+
+        <div class="sidebar-footer">
+          <div class="aws-badge">
+            <span class="aws-mark">AWS</span>
+            <span>Student Builder Challenge</span>
+          </div>
+          <div class="tagline">Build • Learn • Innovate</div>
+          <div class="sidebar-wave" aria-hidden="true">
+            <svg viewBox="0 0 240 120" preserveAspectRatio="none">
+              <path d="M0,90 C36,74 52,58 74,60 S118,86 144,78 188,52 240,68 L240,120 L0,120 Z" />
+              <path d="M0,96 C44,79 78,56 108,60 S170,82 240,74" />
+            </svg>
+          </div>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <button class="mobile-menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <section id="home" class="panel-section hero reveal">
+          <div class="hero-copy">
+            <p class="eyebrow">Hello, I'm</p>
+            <h2 id="heroName" class="hero-name"></h2>
+            <p class="hero-tagline" id="heroTagline"></p>
+            <p class="role-text" id="heroRole"></p>
+
+            <div class="cta-row">
+              <a class="button primary" href="#projects" aria-label="Explore portfolio projects">
+                <span class="button-icon" aria-hidden="true">↗</span>
+                Explore My Portfolio
+              </a>
+              <a class="button secondary" href="#about" aria-label="Learn more about me">Know More</a>
+            </div>
+
+            <div class="terminal-hint">
+              <span>Curious?</span> Try my secret commands — type 'help'!
+            </div>
+            <button type="button" class="launch-terminal" id="launchTerminal">Open Terminal</button>
+          </div>
+
+          <div class="hero-visual" aria-label="Analytics dashboard illustration">
+            <div class="hero-tag-chip">My Tech Superpower...<br />Data Analytics!</div>
+            <svg viewBox="0 0 700 520" role="img" aria-label="Futuristic analytics illustration">
+              <defs>
+                <linearGradient id="heroLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#00d9ff" />
+                  <stop offset="100%" stop-color="#8b35ff" />
+                </linearGradient>
+              </defs>
+              <g opacity="0.18">
+                <path d="M0 420 H700" />
+                <path d="M0 350 H700" />
+                <path d="M0 280 H700" />
+                <path d="M0 210 H700" />
+              </g>
+              <g opacity="0.75">
+                <path class="grid-line" d="M70 120 H620" />
+                <path class="grid-line" d="M70 210 H620" />
+                <path class="grid-line" d="M70 300 H620" />
+              </g>
+              <g>
+                <rect x="90" y="270" width="52" height="110" rx="10" fill="#0d243f" />
+                <rect x="170" y="220" width="52" height="160" rx="10" fill="#0d243f" />
+                <rect x="250" y="180" width="52" height="200" rx="10" fill="#0d243f" />
+                <rect x="330" y="240" width="52" height="140" rx="10" fill="#0d243f" />
+                <rect x="410" y="200" width="52" height="180" rx="10" fill="#0d243f" />
+                <rect x="490" y="155" width="52" height="225" rx="10" fill="#0d243f" />
+                <rect x="570" y="230" width="52" height="150" rx="10" fill="#0d243f" />
+              </g>
+              <g>
+                <rect x="120" y="154" width="100" height="68" rx="12" fill="#09152E" stroke="rgba(100,140,255,0.4)" />
+                <rect x="430" y="118" width="118" height="68" rx="12" fill="#09152E" stroke="rgba(100,140,255,0.4)" />
+              </g>
+              <g>
+                <path d="M90 330 C155 270, 220 240, 330 190 S470 150, 610 208" fill="none" stroke="url(#heroLine)" stroke-width="6" stroke-linecap="round" />
+                <circle cx="186" cy="262" r="5" fill="#00d9ff" />
+                <circle cx="332" cy="190" r="5" fill="#8b35ff" />
+                <circle cx="477" cy="156" r="5" fill="#00d9ff" />
+                <circle cx="610" cy="208" r="5" fill="#8b35ff" />
+              </g>
+              <g>
+                <rect x="455" y="300" width="132" height="104" rx="16" fill="#0a1730" stroke="rgba(100,140,255,0.35)" />
+                <circle cx="486" cy="348" r="22" fill="rgba(0,217,255,0.18)" stroke="#00d9ff" />
+                <path d="M468 348 L480 338 L494 352 L510 332" fill="none" stroke="#00d9ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <rect x="514" y="326" width="48" height="10" rx="5" fill="#00d9ff" opacity="0.75" />
+                <rect x="514" y="344" width="38" height="10" rx="5" fill="#8b35ff" opacity="0.8" />
+                <rect x="514" y="362" width="41" height="10" rx="5" fill="#bd35ff" opacity="0.8" />
+              </g>
+              <g>
+                <rect x="220" y="105" width="132" height="76" rx="14" fill="#0a1730" stroke="rgba(100,140,255,0.35)" />
+                <path d="M248 156 L288 140 L316 150 L340 126" fill="none" stroke="#00d9ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="248" cy="156" r="4" fill="#00d9ff" />
+                <circle cx="288" cy="140" r="4" fill="#8b35ff" />
+                <circle cx="316" cy="150" r="4" fill="#00d9ff" />
+                <circle cx="340" cy="126" r="4" fill="#bd35ff" />
+              </g>
+              <circle cx="102" cy="90" r="6" fill="#00d9ff" opacity="0.8" />
+              <circle cx="624" cy="103" r="6" fill="#8b35ff" opacity="0.8" />
+              <circle cx="610" cy="80" r="4" fill="#00d9ff" opacity="0.7" />
+              <circle cx="160" cy="82" r="4" fill="#8b35ff" opacity="0.7" />
+            </svg>
+          </div>
+        </section>
+
+        <section id="about" class="panel-section about reveal">
+          <div class="about-grid">
+            <article class="glass-card about-card">
+              <div class="section-heading compact">
+                <div class="section-icon primary">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5z" /></svg>
+                </div>
+                <h3>About Me</h3>
+              </div>
+              <div class="about-meta" id="aboutMeta"></div>
+              <p id="aboutDescription"></p>
+              <p id="aboutIntro"></p>
+              <a class="inline-link" href="#contact">Learn More</a>
+            </article>
+
+            <div class="about-visual reveal" aria-hidden="true">
+              <svg viewBox="0 0 360 260" role="img" aria-label="Laptop analytics dashboard artwork">
+                <defs>
+                  <linearGradient id="glassBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00d9ff" stop-opacity="0.95" />
+                    <stop offset="100%" stop-color="#8b35ff" stop-opacity="0.95" />
+                  </linearGradient>
+                </defs>
+                <rect x="50" y="72" width="236" height="124" rx="18" fill="#0b1635" stroke="rgba(100,140,255,0.35)" />
+                <rect x="34" y="190" width="270" height="15" rx="8" fill="#112143" />
+                <rect x="64" y="78" width="178" height="28" rx="9" fill="rgba(100,140,255,0.18)" />
+                <rect x="66" y="124" width="8" height="48" rx="4" fill="#00d9ff" />
+                <rect x="86" y="112" width="8" height="60" rx="4" fill="#8b35ff" />
+                <rect x="106" y="136" width="8" height="36" rx="4" fill="#00d9ff" />
+                <rect x="126" y="104" width="8" height="68" rx="4" fill="#8b35ff" />
+                <rect x="146" y="120" width="8" height="52" rx="4" fill="#00d9ff" />
+                <rect x="166" y="92" width="8" height="80" rx="4" fill="#8b35ff" />
+                <rect x="186" y="130" width="8" height="42" rx="4" fill="#00d9ff" />
+                <path d="M210 130 L238 112 L260 118 L280 102" fill="none" stroke="url(#glassBlue)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                <circle cx="210" cy="130" r="4.5" fill="#00d9ff" />
+                <circle cx="238" cy="112" r="4.5" fill="#8b35ff" />
+                <circle cx="260" cy="118" r="4.5" fill="#00d9ff" />
+                <circle cx="280" cy="102" r="4.5" fill="#8b35ff" />
+                <rect x="262" y="38" width="108" height="80" rx="16" fill="#09152E" stroke="rgba(100,140,255,0.4)" />
+                <rect x="280" y="58" width="72" height="12" rx="6" fill="#00d9ff" opacity="0.8" />
+                <rect x="280" y="78" width="54" height="12" rx="6" fill="#8b35ff" opacity="0.8" />
+                <rect x="280" y="96" width="44" height="12" rx="6" fill="#bd35ff" opacity="0.8" />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="panel-section section-block reveal">
+          <div class="section-header">
+            <h3>My Skills</h3>
+            <button class="view-all-btn" type="button" data-target="skillsExpanded" aria-expanded="false">View All Skills →</button>
+          </div>
+          <div id="skillsGrid" class="skills-grid" aria-live="polite"></div>
+          <div id="skillsExpanded" class="skills-expanded hidden" aria-live="polite"></div>
+        </section>
+
+        <section id="projects" class="panel-section section-block reveal">
+          <div class="section-header">
+            <h3>My Projects</h3>
+            <button class="view-all-btn" type="button" data-target="projectsExpanded" aria-expanded="false">View All Projects →</button>
+          </div>
+          <div id="projectsGrid" class="projects-grid" aria-live="polite"></div>
+          <div id="projectsExpanded" class="projects-expanded hidden" aria-live="polite"></div>
+        </section>
+
+        <section id="achievements" class="panel-section section-block reveal">
+          <div class="section-header">
+            <h3>Achievements</h3>
+            <button class="view-all-btn" type="button" data-target="achievementsExpanded" aria-expanded="false">View All Achievements →</button>
+          </div>
+          <div id="achievementsGrid" class="achievements-grid" aria-live="polite"></div>
+          <div id="achievementsExpanded" class="achievements-expanded hidden" aria-live="polite"></div>
+        </section>
+
+        <section id="journey" class="panel-section journey reveal">
+          <div class="journey-header">
+            <h3>My Journey at a Glance</h3>
+          </div>
+          <div class="journey-grid">
+            <div class="chart-panel">
+              <div class="chart-bars" id="journeyBars" aria-label="Journey metrics">
+                <span class="bar item-1"><i>Projects</i></span>
+                <span class="bar item-2"><i>Certifications</i></span>
+                <span class="bar item-3"><i>Goal</i></span>
+              </div>
+            </div>
+            <div class="journey-stats" id="journeyStats"></div>
+          </div>
+        </section>
+
+        <section id="contact" class="panel-section contact reveal">
+          <div class="contact-copy">
+            <div class="contact-kicker">Get In Touch</div>
+            <h3>Let's connect! Feel free to reach out for collaborations, opportunities or just a friendly hello.</h3>
+            <div id="contactLinks" class="contact-links" aria-label="Contact links"></div>
+          </div>
+          <div class="contact-art" aria-hidden="true">
+            <p>Explore My World of Data,<br />Discover My Tech Superpowers!</p>
+            <svg viewBox="0 0 300 220" role="img" aria-label="Connected analytics network illustration">
+              <circle cx="44" cy="64" r="4" fill="#00d9ff" />
+              <circle cx="118" cy="40" r="4" fill="#8b35ff" />
+              <circle cx="210" cy="68" r="4" fill="#00d9ff" />
+              <circle cx="258" cy="146" r="4" fill="#8b35ff" />
+              <circle cx="120" cy="178" r="4" fill="#00d9ff" />
+              <circle cx="52" cy="156" r="4" fill="#8b35ff" />
+              <path d="M44 64L118 40L210 68L258 146L120 178L52 156Z" fill="none" stroke="rgba(0,217,255,0.5)" stroke-width="2" />
+              <path d="M44 64L52 156M118 40L120 178M210 68L258 146M210 68L120 178M52 156L258 146" fill="none" stroke="rgba(139,53,255,0.5)" stroke-width="2" />
+            </svg>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+    <div class="terminal-overlay hidden" id="terminalOverlay" aria-hidden="true">
+      <div class="terminal-window" role="dialog" aria-modal="true" aria-labelledby="terminalTitle">
+        <div class="terminal-header">
+          <div class="terminal-controls" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div id="terminalTitle" class="terminal-title">Superpower Command Center</div>
+          <div class="terminal-actions">
+            <button type="button" class="terminal-minimize" aria-label="Minimize terminal">_</button>
+            <button type="button" class="terminal-close" aria-label="Close terminal">×</button>
+          </div>
+        </div>
+        <div id="terminalOutput" class="terminal-output" aria-live="polite"></div>
+        <div class="terminal-input-row">
+          <span class="terminal-prompt">guest@dataverse:~$</span>
+          <input id="terminalInput" type="text" spellcheck="false" aria-label="Terminal input" autocomplete="off" />
+        </div>
+      </div>
+    </div>
+
+    <div class="project-modal hidden" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle"></div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
